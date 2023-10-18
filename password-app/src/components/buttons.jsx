@@ -8,10 +8,10 @@ const copyPassword = useCallback(() => {
 }, [password])
 
   return (
-  <div>
+  <>
     <button className='bg-white' onClick={copyPassword}>Copy</button>
     <button className='bg-white' onClick={generatePassword}>Generate</button>
-  </div>
+  </>
   )
 }
 

@@ -35,16 +35,16 @@ const Body = () => {
 
   },[length, numberState, charState])
 
-  useEffect(() => {
-    generatePassword()
-  }, [length, numberState, charState, generatePassword])
+  // useEffect(() => {
+  //   generatePassword()
+  // }, [length, numberState, charState, generatePassword])
 
   
   return (
-    <div className='w-96 h-96 border-2 border-blue-600 rounded-sm'>
-      <h1 className='text-white font-'>Password Generator</h1>
-      <Inputs code={code} numberState= {numberState} length ={length} charState={charState} password= {password} setNumberState= {setNumberState} setcharState={setcharState} setLength = {setLength}/>
-      <Buttons password={password} code={code} generatePassword={ generatePassword}/>
+    <div className='w-2/5 h-96 border-2 border-cyan-400 rounded-sm justify-center text-center items-center inset-x-50 absolute'>
+      <h1 className='text-yellow-300 text-3xl font-bold'>Password Generator</h1>
+      <Inputs generatePassword={ generatePassword} code={code} numberState= {numberState} length ={length} charState={charState} password= {password} setNumberState= {setNumberState} setcharState={setcharState} setLength = {setLength}/>
+     
     </div>
   )
 }
