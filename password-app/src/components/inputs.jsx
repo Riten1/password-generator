@@ -16,7 +16,7 @@ const Inputs = ({
     <div className="inline-block p-5">
       <div className="flex gap-2 mt-3">
         <input
-          className="bg-black text-cyan-400 border-cyan-400 border-2 pl-2 pt-1 pb-1 pr rounded font-orb font-medium"
+          className="bg-black text-cyan-400 border-cyan-400 border-2 pl-2 pt-1 pb-1 pr rounded font-orb font-medium w-72"
           type="text"
           readOnly
           placeholder="Your password"

@@ -34,7 +34,7 @@ const Body = () => {
 
   return (
     <div className="w-100 h-screen bg-black flex justify-center items-center">
-      <div className="w-2/5 h-80 border-2 border-cyan-400 rounded-sm  ">
+      <div className="w-2/5 h-72 border-2 border-cyan-400 rounded-sm  ">
         <h1 className="text-yellow-300 text-3xl font-bold  font-orb pl-5 pt-5">
           Password
         </h1>
