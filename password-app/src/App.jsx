@@ -1,11 +1,10 @@
-import Body from "./components/body"
+import Body from "./components/body";
 function App() {
-
   return (
     <>
       <Body />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

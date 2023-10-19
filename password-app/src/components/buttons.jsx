@@ -9,10 +9,16 @@ const Buttons = ({ generatePassword, code, password }) => {
 
   return (
     <>
-      <button className="bg-yellow-300 font-orb font-bold pl-5 pr-5 rounded-e-lg" onClick={copyPassword}>
-        Copy
+      <button
+        className="bg-black font-orb font-bold pl-5 pr-5 rounded-e-lg border-yellow-300 border-2 text-yellow-300 duration-700 hover:bg-yellow-300 hover:text-black active:opacity-20"
+        onClick={copyPassword}
+      >
+        Copy ➜
       </button>
-      <button className="bg-yellow-300 font-orb font-bold pl-5 pr-5 rounded-e-lg" onClick={generatePassword}>
+      <button
+        className="bg-black font-orb font-bold pl-5 pr-5 rounded-e-lg  border-yellow-300 border-2 text-yellow-300 duration-700 hover:bg-yellow-300 hover:text-black active:opacity-20"
+        onClick={generatePassword}
+      >
         Generate
       </button>
     </>

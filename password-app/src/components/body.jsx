@@ -1,6 +1,5 @@
 import React from "react";
 import Inputs from "./inputs";
-import Buttons from "./buttons";
 import { useEffect, useCallback, useState, useRef } from "react";
 
 const Body = () => {
@@ -35,21 +34,25 @@ const Body = () => {
 
   return (
     <div className="w-100 h-screen bg-black flex justify-center items-center">
-    <div className="w-2/5 h-96 border-2 border-cyan-400 rounded-sm  ">
-      <h1 className="text-yellow-300 text-3xl font-bold  font-orb pl-5 pt-5">Password</h1>
-      <h1 className="text-yellow-300 text-3xl font-bold  font-orb pl-5">Generator</h1>
-      <Inputs
-        generatePassword={generatePassword}
-        code={code}
-        numberState={numberState}
-        length={length}
-        charState={charState}
-        password={password}
-        setNumberState={setNumberState}
-        setcharState={setcharState}
-        setLength={setLength}
-      />
-    </div>
+      <div className="w-2/5 h-80 border-2 border-cyan-400 rounded-sm  ">
+        <h1 className="text-yellow-300 text-3xl font-bold  font-orb pl-5 pt-5">
+          Password
+        </h1>
+        <h1 className="text-yellow-300 text-3xl font-bold  font-orb pl-5">
+          Generator
+        </h1>
+        <Inputs
+          generatePassword={generatePassword}
+          code={code}
+          numberState={numberState}
+          length={length}
+          charState={charState}
+          password={password}
+          setNumberState={setNumberState}
+          setcharState={setcharState}
+          setLength={setLength}
+        />
+      </div>
     </div>
   );
 };

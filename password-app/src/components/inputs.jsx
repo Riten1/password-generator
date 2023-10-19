@@ -30,40 +30,44 @@ const Inputs = ({
         />
       </div>
 
-<div>
-      <input
-        type="range"
-        min={6}
-        max={20}
-        value={length}
-        onChange={(e) => {
-          setLength(e.target.value);
-        }}
-      ></input>
-      <label className="text-white font-orb">Length: {length}</label>
-      </div>
+      <div className="mt-3 ">
+        <div>
+          <input
+            type="range"
+            min={6}
+            max={20}
+            value={length}
+            onChange={(e) => {
+              setLength(e.target.value);
+            }}
+          ></input>
+          <label className="text-white font-orb ml-1">Length: {length}</label>
+        </div>
 
-<div>
-      <input
-        type="checkbox"
-        defaultChecked={numberState}
-        onChange={() => {
-          setNumberState((prevState) => !prevState);
-        }}
-      ></input>
-      <label className="text-white font-orb">Numbers</label>
-      </div>
+        <div>
+          <input
+            className="mr-1 "
+            type="checkbox"
+            defaultChecked={numberState}
+            onChange={() => {
+              setNumberState((prevState) => !prevState);
+            }}
+          ></input>
+          <label className="text-white font-orb">Numbers</label>
+        </div>
 
-      <div>
-      <input
-        type="checkbox"
-        defaultChecked={charState}
-        onChange={() => {
-          setcharState((prevState) => !prevState);
-        }}
-      ></input>
-      <label className="text-white font-orb">Special Charaters</label>
-    </div>
+        <div>
+          <input
+            className="mr-1"
+            type="checkbox"
+            defaultChecked={charState}
+            onChange={() => {
+              setcharState((prevState) => !prevState);
+            }}
+          ></input>
+          <label className="text-white font-orb">Special Charaters</label>
+        </div>
+      </div>
     </div>
   );
 };
